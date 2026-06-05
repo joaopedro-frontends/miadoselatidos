@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miados & Latidos - Prospecção Visual</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Comic-like friendly accent font like Fredoka or Quicksand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#D62828',     /* Vermelho vivo e profissional */
+                            darkRed: '#B22222', 
+                            beige: '#F7F1E3',   /* Bege claro e aconchegante para fundos/detalhes */
+                            darkBeige: '#E5D3B3',
+                            dark: '#2C2C2C'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        friendly: ['Fredoka', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar to make it look premium */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F7F1E3;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D62828;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-brand-beige font-sans text-brand-dark antialiased selection:bg-brand-red selection:text-white">
+
+    <!-- Top Notice Bar para Gatilho Mental de Prospecção (Pode ser removido depois, mas ajuda na venda) -->
+    <div class="bg-brand-dark text-white text-xs md:text-sm py-2 px-4 text-center font-medium border-b border-white/10">
+        ✨ <span class="text-brand-darkBeige font-semibold">Demonstração Exclusiva:</span> Esboço inicial focado em conversão para a <span class="underline decoration-brand-red font-bold">Miados & Latidos</span>.
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="w-full bg-white shadow-sm sticky top-0 z-50 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo Area atualizada com a imagem real do cliente -->
+            <div class="flex items-center transform hover:scale-105 transition-transform duration-200">
+                <img src="miadoselatidoslogo.jpg" 
+                     alt="Logo Miados & Latidos" 
+                     class="h-12 md:h-14 w-auto object-contain rounded-xl drop-shadow-sm"
+                     onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'bg-brand-red text-white px-4 py-2 rounded-xl font-bold\'>Miados & Latidos</div>';">
+            </div>
+
+            <!-- Navigation Links (Simulados) -->
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-gray-600">
+                <a href="#inicio" class="text-brand-red font-semibold transition-colors">Início</a>
+                <a href="#sobre" class="hover:text-brand-red transition-colors">Quem Somos</a>
+                <a href="#servicos" class="hover:text-brand-red transition-colors">Serviços</a>
+                <a href="#avaliacoes" class="hover:text-brand-red transition-colors flex items-center space-x-1">
+                    <span>Avaliações</span>
+                    <span class="bg-amber-100 text-amber-700 text-xs px-2 py-0.5 rounded-full font-bold">★ 5.0</span>
+                </a>
+            </nav>
+
+            <!-- CTA Header Button -->
+            <div class="flex items-center space-x-4">
+                <a href="tel:21992455040" class="hidden sm:inline-flex text-sm font-semibold text-gray-700 hover:text-brand-red items-center space-x-1 transition-colors">
+                    <span>📞 (21) 99245-5040</span>
+                </a>
+                <a href="https://wa.me/5521992455040" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-5 py-2.5 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 text-sm flex items-center space-x-2">
+                    <span>Agendar agora</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Hero Section Container -->
+    <main id="inicio" class="relative overflow-hidden bg-gradient-to-b from-white via-brand-beige/30 to-brand-beige/60 pt-8 pb-16 lg:pt-16 lg:pb-24">
+        
+        <!-- Elementos decorativos de fundo (Patas e Círculos) -->
+        <div class="absolute top-1/4 left-5 text-brand-darkBeige/20 text-6xl pointer-events-none transform -rotate-12 select-none font-friendly">🐾</div>
+        <div class="absolute bottom-10 right-1/3 text-brand-darkBeige/20 text-8xl pointer-events-none transform rotate-45 select-none font-friendly">🐾</div>
+        <div class="absolute top-10 right-10 w-72 h-72 bg-brand-red/5 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Grid Layout Layout Table/Block para máxima compatibilidade sem quebras brutas -->
+            <div class="block lg:flex lg:items-center lg:space-x-12">
+                
+                <!-- Coluna de Texto (Esquerda) -->
+                <div class="w-full lg:w-1/2 space-y-6 text-center lg:text-left mb-12 lg:mb-0">
+                    
+                    <!-- Badge de Prova Social -->
+                    <div class="inline-flex items-center space-x-2 bg-white border border-brand-darkBeige px-4 py-1.5 rounded-full shadow-sm">
+                        <div class="flex items-center text-amber-500 text-sm font-bold">
+                            ★★★★★
+                        </div>
+                        <span class="text-xs md:text-sm font-medium text-gray-700">
+                            Nota <strong class="text-brand-dark">5.0 no Google</strong> · O favorito do Catete 📍
+                        </span>
+                    </div>
+
+                    <!-- Título Principal com copywriting matador focado em carinho e bairro -->
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-friendly font-bold text-brand-dark leading-[1.15]">
+                        O banho mais cheiroso e o carinho que o seu melhor amigo merece
+                    </h1>
+
+                    <!-- Subtexto descritivo conectando com a realidade do cliente -->
+                    <p class="text-base sm:text-lg text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        Na <span class="font-semibold text-brand-red">Miados & Latidos</span>, o banho e tosa vai muito além da estética. Somos o salão de beleza oficial do seu pet no Catete, com profissionais apaixonados e cuidados nível 5 estrelas.
+                    </p>
+
+                    <!-- Caixa com os Principais Benefícios Rápidos -->
+                    <div class="grid grid-cols-2 gap-3 max-w-md mx-auto lg:mx-0 text-left pt-2">
+                        <div class="flex items-center space-x-2 text-sm text-gray-700">
+                            <span class="text-brand-red text-base">✓</span>
+                            <span>Produtos Premium</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-sm text-gray-700">
+                            <span class="text-brand-red text-base">✓</span>
+                            <span>Acalento para pets ansiosos</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-sm text-gray-700">
+                            <span class="text-brand-red text-base">✓</span>
+                            <span>Toalhas 100% esterilizadas</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-sm text-gray-700">
+                            <span class="text-brand-red text-base">✓</span>
+                            <span>Taxistas parceiros para busca</span>
+                        </div>
+                    </div>
+
+                    <!-- Seção de Ações e CTAs Impactantes -->
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <!-- CTA Principal destacado com a cor Vermelha da marca -->
+                        <a href="https://wa.me/5521992455040" target="_blank" class="w-full sm:w-auto bg-brand-red hover:bg-brand-darkRed text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 text-center flex items-center justify-center space-x-3">
+                            <span>💬 Agendar pelo WhatsApp</span>
+                        </a>
+                        
+                        <!-- CTA Secundário para ligar direto -->
+                        <a href="tel:21992455040" class="w-full sm:w-auto bg-white hover:bg-gray-50 text-gray-700 border-2 border-brand-darkBeige font-semibold text-base px-6 py-4 rounded-2xl transition-colors duration-200 text-center flex items-center justify-center space-x-2">
+                            <span>Ligar para o Salão</span>
+                        </a>
+                    </div>
+
+                    <!-- Endereço e Rodapé do Bloco Informativo -->
+                    <div class="pt-4 border-t border-gray-200/60 text-xs text-gray-500 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-6">
+                        <div class="flex items-center space-x-1">
+                            <span>📍</span>
+                            <span class="hover:text-brand-red transition-colors">Rua Ministro Tavares de Lira, 150 - Catete</span>
+                        </div>
+                        <div class="flex items-center space-x-1">
+                            <span>📞</span>
+                            <span>(21) 99245-5040</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Coluna da Imagem / Conteúdo Visual (Direita) -->
+                <div class="w-full lg:w-1/2 relative flex justify-center">
+                    
+                    <!-- Elemento decorativo atrás da foto (Bege escuro/Vermelho) -->
+                    <div class="absolute inset-0 bg-gradient-to-tr from-brand-red/10 to-brand-darkBeige/40 rounded-3xl transform rotate-3 scale-95 -z-10"></div>
+                    
+                    <!-- Moldura Principal da Imagem -->
+                    <div class="relative bg-white p-3 rounded-3xl shadow-xl max-w-md md:max-w-lg overflow-hidden border border-brand-darkBeige/50">
+                        <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=800" 
+                             alt="Cachorrinho feliz tomando banho no petshop" 
+                             class="w-full h-[320px] sm:h-[400px] object-cover rounded-2xl transform hover:scale-102 transition-transform duration-300">
+                        
+                        <!-- Floating Card 1: Horários / Agilidade -->
+                        <div class="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm p-3.5 rounded-2xl shadow-lg border border-brand-darkBeige flex items-center space-x-3 max-w-[220px]">
+                            <div class="bg-amber-100 text-amber-600 rounded-full p-2 text-lg">
+                                🧼
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-brand-dark">Vagas para Hoje!</h4>
+                                <p class="text-[11px] text-gray-500">Garanta o banho do seu pet ainda esta semana.</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Card 2: Selo de Confiança do Catete -->
+                        <div class="absolute top-6 right-6 bg-brand-red text-white p-3 rounded-2xl shadow-lg flex items-center space-x-2 text-xs font-bold">
+                            <span>🔥 Campeão em Elogios</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer rápido com aviso da sua prospecção -->
+    <footer class="bg-white border-t border-brand-darkBeige py-6 text-center text-xs text-gray-400">
+        <p>&copy; 2026 Miados & Latidos. Todos os direitos simulados para fins de apresentação de portfólio.</p>
+    </footer>
+
+</body>
+</html>
